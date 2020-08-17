@@ -95,7 +95,7 @@
         <h2 class="text-center">Create An Account</h2>
         <div class="row mt-4 mb-4">
             <div class="col-md-6 offset-md-3">
-                <form action="" class="shadow-lg p-4" method="post">
+                <form action="" class="shadow-lg p-4" method="POST">
                     <div class="form-group">
                         <i class="fas fa-user"></i><label for="name" class="font-weight-bold pl-2">
                             Name
@@ -169,11 +169,33 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
+
+    <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="" method="POST">
+                        <input type="text" name="name" class="form-control" placeholder="Name"><br>
+                        <input type="text" name="subject" class="form-control" placeholder="Subject"><br>
+                        <input type="email" name="email" class="form-control" placeholder="email"><br>
+                        <textarea class="form-control" name="message" placeholder="How can we help you?"
+                        style="height: 150px;"></textarea><br>
+                        <input type="submit" class="btn btn-primary" value="Send"><br><br>
+                    </form>
+                </div>
+                <div class="col-md-4 text-center">
+                    <strong>Headquarter:</strong><br>OMS pvt Ltd, <br> Ashok Nagar, Ranchi <br> Jharkhand - 434567 <br> Phone: +00000000 <br>
+                    <a href="" target="_blank">www.osms.com</a><br>
+                    <br><br>
+                    <strong>Branch:</strong><br>OMS pvt Ltd, <br> New Ashok Nagar, Delhi <br> Delhi - 564567 <br> Phone: +00000000 <br>
+                    <a href="" target="_blank">www.osms.com</a><br>
+
+                </div>
+            </div>
+        </div>
 
 
 
