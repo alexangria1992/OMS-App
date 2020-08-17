@@ -38,6 +38,18 @@
         </div>
     </nav>
 
+    <header class="jumbotron back-image" style="background-image:url(images/Banner1.jpeg);">
+    <div>
+        <div class="myClass mainHeading">
+        <h1 class="text-uppercase text-danger font-weight-bold">Welcome to OMS</h1>
+        <p class="font-italic">Customer's Happiness is our Aim</p>
+        <a href="" class="btn btn-success mr-4">Login</a>
+        <a href="" class="btn btn-danger mr-4">Sign Up</a>
+
+    </div>
+    </header>
+    
+
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
