@@ -122,6 +122,61 @@
         </div>
     </div>
 
+    <div class="jumbotron bg-danger">
+        <div class="container">
+            <h2 class="text-center text-white">Happy Customers</h2>
+            <div class="row mt-5">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card-shadow-lg-mb-2" style="background-color: white;">
+                        <div class="card-body text-center">
+                            <img src="images/avtar1.jpeg" class="img-fluid" style="border-radius: 100px;" alt="avt1">
+                            <h4 class="card-title">Rahul Kumar</h4>
+                            <p class="card-text">Itaque illo explicabo voluptatum, saepe libero rerum, adducimus voluptasnesciunt debitis numquam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card-shadow-lg-mb-2" style="background-color: white;">
+                        <div class="card-body text-center">
+                            <img src="images/avtar2.jpeg" class="img-fluid" style="border-radius: 100px;" alt="avt2">
+                            <h4 class="card-title">Sonam Sharma</h4>
+                            <p class="card-text">Itaque illo explicabo voluptatum, saepe libero rerum, adducimus voluptasnesciunt debitis numquam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card-shadow-lg-mb-2" style="background-color: white;">
+                        <div class="card-body text-center">
+                            <img src="images/avtar3.jpeg" class="img-fluid" style="border-radius: 100px;" alt="avt3">
+                            <h4 class="card-title">Sumit Vyas</h4>
+                            <p class="card-text">Itaque illo explicabo voluptatum, saepe libero rerum, adducimus voluptasnesciunt debitis numquam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card-shadow-lg-mb-2" style="background-color: white;">
+                        <div class="card-body text-center">
+                            <img src="images/avtar4.jpeg" class="img-fluid" style="border-radius: 100px;" alt="avt">
+                            <h4 class="card-title">Jyoti Sinha</h4>
+                            <p class="card-text">Itaque illo explicabo voluptatum, saepe libero rerum, adducimus voluptasnesciunt debitis numquam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
