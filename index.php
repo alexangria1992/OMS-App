@@ -26,13 +26,13 @@
                     <a href="#Services" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#Registration" class="nav-link">Registration</a>
+                    <a href="#registration" class="nav-link">Registration</a>
                 </li>
                 <li class="nav-item">
                     <a href="#Login" class="nav-link">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.php" class="nav-link">Contact</a>
+                    <a href="#Contact" class="nav-link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -73,7 +73,7 @@
         </div>
     </div>
 
-    <div class="container text-center border-bottom">
+    <div class="container text-center border-bottom" id="Services">
         <h2>Our Services</h2>
         <div class="row mt-4">
             <div class="col-sm-4">
@@ -91,7 +91,7 @@
         </div>
     </div>
 
-    <div class="container pt-5">
+    <div class="container pt-5" id="registration">
         <h2 class="text-center">Create An Account</h2>
         <div class="row mt-4 mb-4">
             <div class="col-md-6 offset-md-3">
@@ -173,7 +173,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="Contact">
             <h2 class="text-center mb-4">Contact Us</h2>
             <div class="row">
                 <div class="col-md-8">
@@ -196,6 +196,24 @@
                 </div>
             </div>
         </div>
+        <footer class="container-fluid bg-dark mt-5 text-white">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-md-6">
+                        <span class="pr-2">Follow Us</span>
+                            <a href="#" target="_blank" class="pr-2 fi-color"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank" class="pr-2 fi-color"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank" class="pr-2 fi-color"><i class="fab fa-youtube"></i></a>
+                            <a href="#" target="_blank" class="pr-2 fi-color"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" target="_blank" class="pr-2 fi-color"><i class="fas fa-rss"></i></a>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <small>Designed by GeekyShows &copy; 2019</small>
+                        <small class="ml-2"><a href="">Admin Login</a></small>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
 
