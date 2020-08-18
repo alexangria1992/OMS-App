@@ -29,7 +29,7 @@
                     <a href="#registration" class="nav-link">Registration</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#Login" class="nav-link">Login</a>
+                    <a href="Requester/RequesterLogin.php" class="nav-link">Login</a>
                 </li>
                 <li class="nav-item">
                     <a href="#Contact" class="nav-link">Contact</a>
@@ -43,8 +43,8 @@
         <div class="myClass mainHeading">
         <h1 class="text-uppercase text-danger font-weight-bold">Welcome to OMS</h1>
         <p class="font-italic">Customer's Happiness is our Aim</p>
-        <a href="" class="btn btn-success mr-4">Login</a>
-        <a href="" class="btn btn-danger mr-4">Sign Up</a>
+        <a href="Requester/RequesterLogin.php" class="btn btn-success mr-4">Login</a>
+        <a href="#registration" class="btn btn-danger mr-4">Sign Up</a>
 
     </div>
     </header>
