@@ -14,8 +14,8 @@
     {
         die("connection Failed");
     }
-    else 
-    {
-        echo "Connect";
-    }
+    // else 
+    // {
+    //     echo "Connect";
+    // }
 ?>
