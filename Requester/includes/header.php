@@ -33,7 +33,7 @@
                             <a class="nav-link <?php if(PAGE == 'Requesterchangepass'){echo 'active';} ?>"  href="Requesterchangepass.php"><i class="fas fa-key"></i> Change Password</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"   href=""><i class="fas fa-sign-out-alt"></i> Logout</a>
+                            <a class="nav-link"   href="../logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
                         </li>
                         
                     </ul>
