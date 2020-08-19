@@ -21,19 +21,19 @@
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" <?php if(PAGE == 'RequesterProfile.php'){echo 'active';} ?> href="RequesterProfile.php"><i class="fas fa-user"></i> Profile</a>
+                            <a class="nav-link <?php if(PAGE == 'RequesterProfile'){echo 'active';} ?>"  href="RequesterProfile.php"><i class="fas fa-user"></i> Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" <?php if(PAGE == 'SubmitRequest.php'){echo 'active';} ?> href="SubmitRequest.php"><i class="fab fa-accessible-icon"></i> Submit Request</a>
+                            <a class="nav-link <?php if(PAGE == 'SubmitRequest'){echo 'active';} ?>"  href="SubmitRequest.php"><i class="fab fa-accessible-icon"></i> Submit Request</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" <?php if(PAGE == 'CheckStatus.php'){echo 'active';} ?> href="CheckStatus.php"><i class="fas fa-align-center"></i> Service Status</a>
+                            <a class="nav-link <?php if(PAGE == 'CheckStatus'){echo 'active';} ?>"  href="CheckStatus.php"><i class="fas fa-align-center"></i> Service Status</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" <?php if(PAGE == 'Requesterchangepass.php'){echo 'active';} ?> href="Requesterchangepass.php"><i class="fas fa-key"></i> Change Password</a>
+                            <a class="nav-link <?php if(PAGE == 'Requesterchangepass'){echo 'active';} ?>"  href="Requesterchangepass.php"><i class="fas fa-key"></i> Change Password</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  <?php if(PAGE == 'Requesterchangepass.php'){echo 'active';} ?> href=""><i class="fas fa-sign-out-alt"></i> Logout</a>
+                            <a class="nav-link"   href=""><i class="fas fa-sign-out-alt"></i> Logout</a>
                         </li>
                         
                     </ul>

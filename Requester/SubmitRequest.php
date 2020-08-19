@@ -18,6 +18,7 @@
     if(isset($_REQUEST['submitrequest']))
     {
         //Checking for empty fields
+        $genid = mysqli_insert_id($conn);
         if(($_REQUEST['requestinfo'] == "") || ($_REQUEST['requestdesc'] == "") || ($_REQUEST['requestername'] == "") || ($_REQUEST['requesteradd1'] == "") || ($_REQUEST['requesteradd2'] == "") || ($_REQUEST['requestercity'] == "") || ($_REQUEST['requesterstate'] == "") || ($_REQUEST['requesterzip'] == "") || ($_REQUEST['requesteremail'] == "") || ($_REQUEST['requestermobile'] == "") || ($_REQUEST['requestdate'] == ""))
         {
            $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2">Fill All Fields</div>';
@@ -39,7 +40,11 @@
            $sql = "INSERT INTO submitrequest_tb(request_info, request_desc, requester_name, requester_add1, requester_add2, requester_city, requester_state, requester_zip, requester_email, requester_mobile, request_date) VALUES('$rinfo', '$rdesc', '$rname', '$radd1','$radd2', '$rcity', '$rstate', '$rzip', '$remail', '$rmobile', '$rdate')";
            if($conn->query($sql)== TRUE)
            {
+            $genid = mysqli_insert_id($conn);
             $msg = "<div class='alert alert-success col-sm-6 ml-5 mt-2'>Request Submitted Successfully</div>";
+            $_SESSION['myid'] = $genid;
+            echo "<script>location.href='submitrequestsuccess.php';</script>";
+
            }
            else 
            {
