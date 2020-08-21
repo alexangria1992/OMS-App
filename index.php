@@ -173,7 +173,7 @@
                     </div>
                     <div class="col-md-6 text-right">
                         <small>Designed by GeekyShows &copy; 2019</small>
-                        <small class="ml-2"><a href="">Admin Login</a></small>
+                        <small class="ml-2"><a href="Admin/login.php">Admin Login</a></small>
                     </div>
                 </div>
             </div>
