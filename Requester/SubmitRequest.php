@@ -1,10 +1,9 @@
 
-<?php
+  <?php
     define('TITLE', 'Submit Request');
     define('PAGE', 'SubmitRequest');
-
-    include("includes/header.php");
-    include("../dbConnection.php");
+    include('includes/header.php');
+    include ("../dbConnection.php");
     session_start();
     if($_SESSION['is_login'])
     {
@@ -17,45 +16,42 @@
 
     if(isset($_REQUEST['submitrequest']))
     {
-        //Checking for empty fields
-        $genid = mysqli_insert_id($conn);
         if(($_REQUEST['requestinfo'] == "") || ($_REQUEST['requestdesc'] == "") || ($_REQUEST['requestername'] == "") || ($_REQUEST['requesteradd1'] == "") || ($_REQUEST['requesteradd2'] == "") || ($_REQUEST['requestercity'] == "") || ($_REQUEST['requesterstate'] == "") || ($_REQUEST['requesterzip'] == "") || ($_REQUEST['requesteremail'] == "") || ($_REQUEST['requestermobile'] == "") || ($_REQUEST['requestdate'] == ""))
         {
-           $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2">Fill All Fields</div>';
+            $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2">Fill All Fields</div>';
         }
         else
         {
-           $rinfo =  $_REQUEST['requestinfo'];
-           $rdesc =  $_REQUEST['requestdesc'];
-           $rname =  $_REQUEST['requestername'];
-           $radd1 =  $_REQUEST['requesteradd1'];
-           $radd2 =  $_REQUEST['requesteradd2'];
-           $rcity =  $_REQUEST['requestercity'];
-           $rstate =  $_REQUEST['requesterstate'];
-           $rzip =  $_REQUEST['requesterzip'];
-           $remail=  $_REQUEST['requesteremail'];
-           $rmobile =  $_REQUEST['requestermobile'];
-           $rdate =  $_REQUEST['requestdate'];
+            $rinfo =  $_REQUEST['requestinfo'];
+            $rdesc =  $_REQUEST['requestdesc'];
+            $rname =  $_REQUEST['requestername'];
+            $radd1 =  $_REQUEST['requesteradd1'];
+            $radd2 =  $_REQUEST['requesteradd2'];
+            $rcity =  $_REQUEST['requestercity'];
+            $rstate =  $_REQUEST['requesterstate'];
+            $rzip =  $_REQUEST['requesterzip'];
+            $remail=  $_REQUEST['requesteremail'];
+            $rmobile =  $_REQUEST['requestermobile'];
+            $rdate =  $_REQUEST['requestdate'];
+            $sql = "INSERT INTO submitrequest_tb(request_info, request_desc, requester_name, requester_add1, requester_add2, requester_city, requester_state, requester_zip, requester_email, requester_mobile, request_date) VALUES('$rinfo', '$rdesc', '$rname', '$radd1','$radd2', '$rcity', '$rstate', '$rzip', '$remail', '$rmobile', '$rdate')";
+            if($conn->query($sql)== TRUE)
+            {
+             $genid = mysqli_insert_id($conn);          
+             $msg = "<div class='alert alert-success col-sm-6 ml-5 mt-2'>Request Submitted Successfully</div>";
+             $_SESSION['myid'] = $genid;
+             echo "<script>location.href='submitrequestsuccess.php';</script>";
 
-           $sql = "INSERT INTO submitrequest_tb(request_info, request_desc, requester_name, requester_add1, requester_add2, requester_city, requester_state, requester_zip, requester_email, requester_mobile, request_date) VALUES('$rinfo', '$rdesc', '$rname', '$radd1','$radd2', '$rcity', '$rstate', '$rzip', '$remail', '$rmobile', '$rdate')";
-           if($conn->query($sql)== TRUE)
-           {
-            $genid = mysqli_insert_id($conn);
-            $msg = "<div class='alert alert-success col-sm-6 ml-5 mt-2'>Request Submitted Successfully</div>";
-            $_SESSION['myid'] = $genid;
-            echo "<script>location.href='submitrequestsuccess.php';</script>";
-
-           }
-           else 
-           {
-            $msg = "<div class='alert alert-danger col-sm-6 ml-5 mt-2'>Unable to Submit Your Request</div>";
-           }
-           
+            }
+            else 
+            {
+             $msg = "<div class='alert alert-danger col-sm-6 ml-5 mt-2'>Unable to Submit Your Request</div>";
+            }
         }
     }
-?>
 
-<div class="col-sm-9 col-md-10 mt-5">
+
+  ?>
+  <div class="col-sm-9 col-md-10 mt-5">
     <form class="mx-5" action="" method="POST">
         <div class="form-group">
             <label for="inputRequestInfo">Request Info</label>
@@ -78,11 +74,11 @@
                <input type="text" class="form-control" id="inputAddress" placeholder="House No. 1234"
                name="requesteradd1">
            </div>
-        <div class="form-group col-md-6">
+           <div class="form-group col-md-6">
             <label for="inputAddress2">Address Line 2</label>
             <input type="text" class="form-control" id="inputAddress2" placeholder="Railway Colony" 
             name="requesteradd2">
-        </div>
+          </div>
         </div>
         <div class="form-row">
            <div class="form-group col-md-6">
@@ -123,20 +119,19 @@
             echo $msg;
         }
     ?>
-</div>
-
-<script>
-    function isInputNumber(evt)
-    {
-        var ch = String.formCharCode(evt.which);
-        if(!(/[0-9]/.test(ch)))
-        {
-           evt.preventDefault();
-        }
-    }
-</script>
-
+    </div>
+    <script>
+                function isInputNumber(evt)
+                {
+                    var ch = String.formCharCode(evt.which);
+                    if(!(/[0-9]/.test(ch)))
+                    {
+                    evt.preventDefault();
+                    }
+                }
+            </script>
 <?php 
     include("includes/footer.php");
 ?>
+  
 

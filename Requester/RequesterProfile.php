@@ -66,7 +66,16 @@
                   
                 </form>
             </div>
-
+            <script>
+                function isInputNumber(evt)
+                {
+                    var ch = String.formCharCode(evt.which);
+                    if(!(/[0-9]/.test(ch)))
+                    {
+                    evt.preventDefault();
+                    }
+                }
+            </script>
             <?php
                 include("includes/footer.php");
             ?>
