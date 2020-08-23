@@ -16,7 +16,7 @@
 
  <div class="container-fluid" style="margin-top: 40px;">
         <div class="row">
-            <nav class="col-sm-2 bg-light sidebar py-5">
+            <nav class="col-sm-2 bg-light sidebar py-5 d-print-none">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
